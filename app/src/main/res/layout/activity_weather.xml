@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/main_background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/main_menu"
+            android:theme="@style/App.ToolbarStyle"
+            app:titleTextAppearance="@style/App.ToolbarTitleTex"/>
+
+    <RelativeLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+            <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/round_room_white_36"
+                    app:tint="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/tvCityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:text="Dubai"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/tvCountryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCityName"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:text="United Arab Emirates"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:layout_marginTop="20dp"
+                >
+
+            <RelativeLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                <TextView
+                        android:id="@+id/tvTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:textSize="50sp"
+                        android:textColor="@color/colorAccent" />
+
+                <TextView
+                        android:id="@+id/tvTemperatureUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tvTemperature"
+                        android:layout_marginLeft="8dp"
+                        android:text="C"
+                        android:textSize="35sp"
+                        android:textColor="@android:color/white" />
+
+                <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTemperature"
+                        android:layout_alignLeft="@+id/tvTemperature"
+                        android:text="Clear"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_toLeftOf="@+id/layout3"
+                    android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout2"
+                android:layout_marginTop="15dp"
+                tools:listitem="@layout/layout_day_list_item" />
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+</RelativeLayout>

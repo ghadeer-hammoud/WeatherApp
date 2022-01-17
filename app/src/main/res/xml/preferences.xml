@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+            app:key="weather_parameters_category"
+            app:title="Weather Parameters">
+
+        <ListPreference
+                app:key="days_to_show"
+                app:title="Number of days to show"
+                app:entries="@array/weather_days_to_show"
+                app:entryValues="@array/weather_days_to_show"
+                app:defaultValue="8"
+                app:summary="%s"
+                />
+
+        <ListPreference
+                app:key="temp_unit"
+                app:title="Temperature unit"
+                app:entries="@array/temp_units"
+                app:entryValues="@array/temp_units_values"
+                app:defaultValue="standard"
+                app:summary="%s"
+                />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            app:key="notifications_category"
+            app:title="Notifications">
+
+        <SwitchPreference
+                app:key="isNotifications"
+                app:title="Receive daily notifications"
+                app:defaultValue="true"
+                app:summary="Receive daily notification at 06:00 am about current weather temperature."
+            />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

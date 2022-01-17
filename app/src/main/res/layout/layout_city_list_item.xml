@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="8dp"
+        android:padding="12dp">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/round_room_white_24"
+            app:tint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toLeftOf="@+id/favoriteBtn"
+            android:layout_centerVertical="true"
+            android:text="City name"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+    <ImageView
+            android:id="@+id/favoriteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/outline_star_border_white_24"
+            app:tint="@color/yellow" />
+
+
+</RelativeLayout>
