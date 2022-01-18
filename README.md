@@ -31,4 +31,4 @@ Due to the deadline, there are some ignored requirements.
 - Improvements in the UI and refreshing the data in a smooth way.
 
 
-![Weather](docs/screenshots/.png)
+![Weather](docs/screenshots/weather.png)
