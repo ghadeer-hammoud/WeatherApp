@@ -7,8 +7,8 @@ What I have implemented.
 • Followed the MVVM with Repository architecture pattern.
 	• Created WeatherActivity/WeatherViewModel, SearchCitiesActivity/SearchCitiesViewModel, FavoriteCitiesActivity/FavoriteCitiesVirwModel and MySettingsActivity which is a PreferenceScren.
 	• Created two repositories, WeatherRepository which gets data from WeatherApi and CityRepository which gets data from CityApi and LocalDB).
-  • Created models to map the apis responses. I used OpenWeatherMap Api which returns WeatherReport model, and GeoDB api which returns CityResponse.
-  • Created a preference screen (MySettingsActivity) to control how many days to show in WeatherActivity, which temperature unit to show and if the user want to receive the daily notification or not, and save there values in SharedPreference to meet the user choices in UI.
+  	• Created models to map the apis responses. I used OpenWeatherMap Api which returns WeatherReport model, and GeoDB api which returns CityResponse.
+  	• Created a preference screen (MySettingsActivity) to control how many days to show in WeatherActivity, which temperature unit to show and if the user want to receive the daily notification or not, and save there values in SharedPreference to meet the user choices in UI.
 
 • Used Room Database to save favorite cities.
 • Used Dagger2 to implement dependency injection. I creaded AppComponent and MainComponent with various modules to provide a lot of objects to inject.
