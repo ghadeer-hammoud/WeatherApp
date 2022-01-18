@@ -29,3 +29,6 @@ Due to the deadline, there are some ignored requirements.
 - Unit tests: I had to use JavaUnitTest to test some units of the code.
 - Multiple variants for different environments.
 - Improvements in the UI and refreshing the data in a smooth way.
+
+
+![Weather](docs/screenshots/.png)
