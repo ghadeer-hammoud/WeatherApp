@@ -31,4 +31,4 @@ Due to the deadline, there are some ignored requirements.
 - Improvements in the UI and refreshing the data in a smooth way.
 
 
-![Weather](docs/screenshots/weather.png) ![Search](docs/screenshots/search cities.png) ![Settings](docs/screenshots/settings.png)
+![Weather](docs/screenshots/weather.png) ![Search](docs/screenshots/search_cities.png) ![Settings](docs/screenshots/settings.png)
