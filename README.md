@@ -21,14 +21,6 @@ What I have implemented.
   - AlarmUtils: to set the daily alarm or disable it.
   - Constants: to hold the app constants like APIs url and keys.
   
-What I have NOT implemented.
-========================
-Due to the deadline, there are some ignored requirements.
-
-- Caching Data: I had to get all of the app data (except for search) from the local DB and sync internally for updates.
-- Unit tests: I had to use JavaUnitTest to test some units of the code.
-- Multiple variants for different environments.
-- Improvements in the UI and refreshing the data in a smooth way.
 
 
 ![Weather](docs/screenshots/weather.png) ![Search](docs/screenshots/search_cities.png) ![Settings](docs/screenshots/settings.png)
